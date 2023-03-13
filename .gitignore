@@ -1,0 +1,6 @@
+.venv/
+target/
+foo/
+__pycache__/
+.pytest_cache/
+*.py[co]

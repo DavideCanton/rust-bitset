@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "command": "${config:cmd.activate-env} && maturin develop",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "label": "maturin build",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "command": "${config:cmd.activate-env} && python foo/foo.py",
+            "group": "none",
+            "label": "run",
+            "problemMatcher": []
+        }
+    ]
+}
